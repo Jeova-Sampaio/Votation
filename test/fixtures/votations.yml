@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  cpf: MyString
+  sector: MyString
+  registration: MyString
+  birthday: 1
+  servidorsesec: MyString
+  servidorgmf: MyString
+  servidordc: MyString
+
+two:
+  name: MyString
+  cpf: MyString
+  sector: MyString
+  registration: MyString
+  birthday: 1
+  servidorsesec: MyString
+  servidorgmf: MyString
+  servidordc: MyString

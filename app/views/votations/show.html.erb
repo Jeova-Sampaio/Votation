@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @votation.name %>
+</p>
+
+<p>
+  <strong>Cpf:</strong>
+  <%= @votation.cpf %>
+</p>
+
+<p>
+  <strong>Sector:</strong>
+  <%= @votation.sector %>
+</p>
+
+<p>
+  <strong>Registration:</strong>
+  <%= @votation.registration %>
+</p>
+
+<p>
+  <strong>Birthday:</strong>
+  <%= @votation.birthday %>
+</p>
+
+<p>
+  <strong>Servidorsesec:</strong>
+  <%= @votation.servidorsesec %>
+</p>
+
+<p>
+  <strong>Servidorgmf:</strong>
+  <%= @votation.servidorgmf %>
+</p>
+
+<p>
+  <strong>Servidordc:</strong>
+  <%= @votation.servidordc %>
+</p>
+
+<%= link_to 'Edit', edit_votation_path(@votation) %> |
+<%= link_to 'Back', votations_path %>

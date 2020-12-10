@@ -1,0 +1,78 @@
+<%= form_with(model: votation, local: true) do |form| %>
+  <% if votation.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(votation.errors.count, "error") %> prohibited this votation from being saved:</h2>
+
+      <ul>
+      <% votation.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cpf %>
+    <%= form.text_field :cpf %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sector %>
+    <%= form.text_field :sector %>
+  </div>
+
+  <div class="field">
+    <%= form.label :registration %>
+    <%= form.text_field :registration %>
+  </div>
+
+  <div class="field">
+    <%= form.label :birthday %>
+    <%= form.number_field :birthday %>
+  </div>
+
+  <div class="field">
+    <%= form.label :servidorsesec %>
+    <%= form.text_field :servidorsesec %>
+  </div>
+
+  <div class="field">
+    <%= form.label :servidorgmf %>
+    <%= form.text_field :servidorgmf %>
+  </div>
+
+  <div class="field">
+    <%= form.label :servidordc %>
+    <%= form.text_field :servidordc %>
+  </div>
+
+  <p><strong>Servidores da SESEC</strong></p>
+
+  <%= form.radio_button :servidorsesec, '1' %> Acrísio Alves Dias Junior <br />
+  <%= form.radio_button :servidorsesec, '2' %> Álisson Cunha Barros <br />
+  <%= form.radio_button :servidorsesec, '3' %> Antônia Cleidiane Lopes da Silva <br />
+  <%= form.radio_button :servidorsesec, '4' %> Claudejane Teixeira Almeida  <br />
+  <%= form.radio_button :servidorsesec, '5' %> Emília Pinto Lima <br />
+  <%= form.radio_button :servidorsesec, '6' %> Francisco de Aquino Bezerra  <br />
+  <%= form.radio_button :servidorsesec, '7' %> Inocencia Adna Muniz de Mesquita <br />
+  <%= form.radio_button :servidorsesec, '8' %> Jorge Luis Lima da Silva <br />
+  <%= form.radio_button :servidorsesec, '9' %> Mara Crhistyne Siqueira Apolônio  <br />
+  <%= form.radio_button :servidorsesec, '10' %> Patrícia Ferreira Moreira de Sousa  <br />
+  <%= form.radio_button :servidorsesec, '11' %> Raimundo Nonato Oliveira Fernandes <br />
+  <%= form.radio_button :servidorsesec, '12' %> Thiago David Furtado Cavalcante <br />
+  <%= form.radio_button :servidorsesec, '13' %> Valéria da Silva Policarpo Silveira <br />
+  <%= form.radio_button :servidorsesec, '14' %> Zennilton Rodrigues de Sousa <br />
+
+  <p><strong>Servidores da GMF</strong></p>
+
+  <p><strong>Servidores da Defesa Civil</strong></p>
+  
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
