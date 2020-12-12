@@ -13,6 +13,8 @@
       <th>Servidorsesec</th>
       <th>Servidorgmf</th>
       <th>Servidordc</th>
+      <th>Ação</th>
+      <th>Quantidade de votos</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -29,8 +31,8 @@
         <td><%= votation.servidorgmf %></td>
         <td><%= votation.servidordc %></td>
         <td><%= link_to 'Show', votation %></td>
-        <td><%= link_to 'Edit', edit_votation_path(votation) %></td>
-        <td><%= link_to 'Destroy', votation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%#= link_to 'Edit', edit_votation_path(votation) %></td>
+        <td><%#= link_to 'Destroy', votation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
